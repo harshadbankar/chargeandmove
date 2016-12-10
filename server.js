@@ -3,6 +3,8 @@ var app = require('express')();
 //Load the request module
 var request = require('request');
 var http = require('http').Server(app);
+
+
 var io = require('socket.io')(http);
 var databaseName = 'chargeandmove';
 var MongoClient = require('mongodb').MongoClient,
